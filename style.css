@@ -1,0 +1,242 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+/* ===== HEADER ATAS ===== */
+.navbar-top {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  color: #ff5c00;
+  font-weight: 800;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  background-color: #ff5c00;
+  color: white;
+  border-radius: 6px;
+  padding: 0 4px;
+  margin-left: 2px;
+  font-size: 24px;
+}
+
+.search-wrapper {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  margin-left: 10px;
+}
+
+.search-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.btn-cari {
+  background-color: #ff5c00;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 6px 26px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 10px;
+  transition: background 0.3s;
+}
+
+.btn-cari:hover {
+  background-color: #e14e00;
+}
+
+.btn-masuk {
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* ===== MENU NAV ===== */
+.navbar-menu {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-menu .nav-link {
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
+.navbar-menu .nav-link.active {
+  color: #ff5c00;
+  border-bottom: 2px solid #ff5c00;
+}
+
+.navbar-menu .nav-link:hover {
+  color: #ff5c00;
+}
+
+/* ===== TRENDING SECTION (Liputan6 Style) ===== */
+.trending-section {
+  background-color: #fffaf6; /* warna krem lembut */
+  border: 1px solid #f5d8c0; /* garis oranye lembut */
+  border-radius: 12px;
+  box-shadow: 0 0 3px rgba(255, 92, 0, 0.05);
+  margin-top: 10px;
+}
+
+.trending-label {
+  color: #d54b40;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.trending-label i {
+  color: #d54b40;
+}
+
+.trending-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+  scrollbar-width: none;
+}
+
+.trending-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Chip/tag trending */
+.trending-tag {
+  background-color: #fff8f2;
+  border: 1px solid #f7dec8;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 5px 14px;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.trending-tag:hover {
+  background-color: #ffeede;
+  border-color: #ffcb9d;
+  color: #ff5c00;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .trending-label {
+    font-size: 14px;
+  }
+  .trending-tag {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+}
+
+/* ===== BERITA UTAMA ===== */
+.container .card.border-0 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.container .card.border-0 .card-img-top {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== TERPOPULER ===== */
+.list-group-item p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.list-group-item h2 {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.terpopuler-scroll {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.terpopuler-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.terpopuler-scroll::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 6px;
+}
+
+/* ===== GRID BERITA ===== */
+.card-img-top {
+  height: 160px;
+  object-fit: cover;
+}
+
+/* ===== ENAM+ SECTION ===== */
+#enamPlus img {
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+#enamPlus img:hover {
+  transform: scale(1.02);
+}
+
+#enamPlus h5 {
+  line-height: 1.4;
+}
+
+#enamPlus button {
+  border-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .btn-masuk { padding: 5px 14px; }
+  .btn-cari { padding: 5px 18px; }
+  .logo { font-size: 24px; }
+  .card-img-top { height: 150px; }
+  section .card img { height: 250px; }
+}
+
+@media (max-width: 768px) {
+  .list-group-item h2 { font-size: 24px; }
+  .list-group-item p { font-size: 14px; }
+  .terpopuler-scroll { max-height: none; }
+  .card-img-top { height: 140px; }
+}

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liputan6 Clone - Berita</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- ===== HEADER ===== -->
+    <div class="navbar-top">
+        <div class="container">
+            <div class="row align-items-center gx-2">
+                <div class="col-auto">
+                    <div class="logo">LIPUTAN<span>6</span></div>
+                </div>
+                <div class="col">
+                    <div class="search-wrapper">
+                        <input type="text" placeholder="Berita apa yang ingin anda baca hari ini?">
+                    </div>
+                </div>
+                <div class="col-auto"><button class="btn-cari">CARI</button></div>
+                <div class="col-auto"><button class="btn-masuk">Masuk</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===== NAVBAR UTAMA ===== -->
+    <nav class="main-nav bg-white sticky-top navbar navbar-expand-lg navbar-light">
+        <div class="container px-3 px-md-2">
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav align-items-lg-center mt-2 mt-lg-0 flex-wrap gap-1 justify-content-between w-100">
+
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">NEWS</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">BISNIS</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">ENAM PLUS</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">BOLA</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">TV</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">SHOWBIZ</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">TEKNO</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">FOTO</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">HOT</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 py-2 fw-bold" href="#">CEK FAKTA</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold align-items-center gap-1 dropdown-toggle px-2" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            LAINNYA <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu rounded-3 mt-1">
+                            <li><a class="dropdown-item" href="#">Gaya Hidup</a></li>
+                            <li><a class="dropdown-item" href="#">Kesehatan</a></li>
+                            <li><a class="dropdown-item" href="#">Otomotif</a></li>
+                            <li><a class="dropdown-item" href="#">Internasional</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ===== TRENDING SECTION ===== -->
+    <section class="trending-section py-2 rounded-4 fw-semibold">
+        <div class="container px-3 px-md-4 d-flex align-items-center">
+            <div class="trending-label fw-bold me-3 d-flex align-items-center gap-2 text-nowrap">
+                <i class="fa-solid fa-arrow-trend-up"></i> Trending
+            </div>
+            <div class="trending-container d-flex overflow-x-auto gap-3 py-1 flex-grow-1">
+                <a href="#" class="trending-tag">Setahun Prabowo-Gibran</a>
+                <a href="#" class="trending-tag">BLT</a>
+                <a href="#" class="trending-tag">Raisa Andriana</a>
+                <a href="#" class="trending-tag">Makan Bergizi Gratis</a>
+                <a href="#" class="trending-tag">KTT ASEAN</a>
+                <a href="#" class="trending-tag">Jokowi</a>
+                <a href="#" class="trending-tag">Prabowo Subianto</a>
+                <a href="#" class="trending-tag">Manchester United</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ===== BERITA UTAMA + TERPOPULER ===== -->
+    <section class="container my-4">
+        <div class="row g-4">
+            <!-- Berita Utama -->
+            <div class="col-lg-8">
+                <div class="card border-0">
+                    <img src="https://www.harryda.se/images/18.c0a4fce1818001791010518/1657888439384/buss.JPG"
+                        class="card-img-top rounded-2" alt="Bus Transjakarta">
+                    <div class="card-body px-0">
+                        <small class="text-secondary d-block mb-1">2 jam lalu</small>
+                        <h3 class="fw-bold fs-4">Wacana Tarif Transjakarta Naik Jadi Rp 5.000, Begini Curahan Hati
+                            Penumpang</h3>
+                    </div>
+                </div>
+
+                <div class="row border-top pt-3 mt-2 g-3">
+                    <div class="col-md-4 col-12">
+                        <small class="text-secondary">1 jam lalu</small>
+                        <p class="fw-semibold">Anggota KKB Penembak Brigadir Joal Sibarani Dibekuk di Lanny Jaya</p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <small class="text-secondary">1 jam lalu</small>
+                        <p class="fw-semibold">Lukisan Picasso Seharga Rp 11,6 Miliar Raib di Tengah Pengiriman ke Eropa
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <small class="text-secondary">1 jam lalu</small>
+                        <p class="fw-semibold">Rp 1.764 Triliun Kredit Disebar Bank Mandiri hingga September 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terpopuler -->
+            <div class="col-lg-4">
+                <div class="ps-3 border-start border-2 border-warning">
+                    <h6 class="fw-bold mb-3 text-dark"><span class="text-warning">┃</span> Terpopuler</h6>
+                    <div class="list-group list-group-flush terpopuler-scroll"
+                        style="max-height: 500px; overflow-y: auto;">
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">1</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Pramono Anung Kenal Baik Sopir Lexus yang Tewas Tertimpa
+                                    Pohon Palem</p>
+                                <small class="text-secondary">8 jam lalu</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">2</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Meninggal Karena Sakit, Ini Sederet Aksi Mengerikan KKB
+                                    Undius Kogoya</p>
+                                <small class="text-secondary">11 jam lalu</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">3</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Viral WNA Israel Punya KTP, Disdukcapil Cianjur Beberkan
+                                    Fakta</p>
+                                <small class="text-secondary">11 jam lalu</small>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">4</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Pemerintah Siapkan Subsidi BBM untuk Masyarakat Kurang Mampu
+                                </p>
+                                <small class="text-secondary">9 jam lalu</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">5</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Gempa Bumi 5,3 SR Guncang Maluku, Warga Berhamburan ke
+                                    Tempat Aman</p>
+                                <small class="text-secondary">10 jam lalu</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">6</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Harga Emas Naik, Investor Ritel Mulai Serbu Pasar Logam
+                                    Mulia</p>
+                                <small class="text-secondary">12 jam lalu</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">7</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Kecelakaan Tol Cipali, Lalu Lintas Padat Sejak Pagi</p>
+                                <small class="text-secondary">13 jam lalu</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">8</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Timnas Indonesia Lolos ke Piala Asia, Suporter Sambut
+                                    Antusias</p>
+                                <small class="text-secondary">14 jam lalu</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">9</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">BPJS Kesehatan Umumkan Perubahan Tarif Premi Mulai Januari
+                                </p>
+                                <small class="text-secondary">15 jam lalu</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 border-0 d-flex">
+                            <h2 class="text-warning fw-bold me-3">10</h2>
+                            <div>
+                                <p class="fw-semibold mb-1">Presiden Resmikan Jalan Tol Trans Sumatra Seksi Baru</p>
+                                <small class="text-secondary">16 jam lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===== GRID 8 BERITA ===== -->
+    <section class="container my-5">
+        <div class="row g-3">
+            <!-- 1 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <img src="http://kaltimtoday.co/wp-content/uploads/2023/03/mahfud-md-ungkap-transaksi-mencurigakan-rp300-triliun-di-kementerian-keuangan.jpg"
+                        class="card-img-top rounded-3" alt="Berita 1">
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Cek Fakta: Tidak Benar Klaim Video Mahfud Md...</p>
+                        <small class="text-secondary">2 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <img src="https://cdn.antaranews.com/cache/1200x800/2024/03/25/Bantuan.jpg"
+                        class="card-img-top rounded-3" alt="Berita 2">
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Pasokan Bantuan Pangan di Gaza Masih Terbatas</p>
+                        <small class="text-secondary">2 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <img src="https://cdn.medcom.id/dynamic/photos/2024/11/05/68328/Pabrik-Daihatsu-Karawang-Bisa-Produksi-200-Ribu-Unit-Mobil-Per-Tahun-2.jpg?w=1024"
+                        class="card-img-top rounded-3" alt="Berita 3">
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Laporan Liputan6.com dari Tokyo: Intip Pabrik Daihatsu...</p>
+                        <small class="text-secondary">2 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2022/11/22/menengok-dampak-gempa-yang-porak-porandakan-cianjur-5_169.jpeg?w=700&q=90"
+                        class="card-img-top rounded-3" alt="Berita 4">
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Gempa Hari Ini Awal Pekan, Senin 27 Oktober 2025...</p>
+                        <small class="text-secondary">1 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <img src="https://storage.cpfood.co.id/uploads/public/615/ff8/5e8/thumb_960_0_0_0_0_auto.jpeg"
+                        class="card-img-top rounded-3" alt="Berita 5">
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">BRIN Kembangkan Sosis Ayam Berbasis Sorgum, Tinggi...</p>
+                        <small class="text-secondary">2 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01hcmhqjzqnc9vfjb1756g0wc6.jpg"
+                        class="card-img-top rounded-3" alt="Berita 6">
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Mantan Karyawannya BUMN tersangka kasus korupsi.</p>
+                        <small class="text-secondary">2 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <img src="https://i.pinimg.com/736x/c0/8c/b2/c08cb207bd1cdf13638751d107916f19.jpg"
+                        class="card-img-top rounded-3" alt="Berita 7">
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Rooney Ungkap Penyebab Liverpool Terseok-seok</p>
+                        <small class="text-secondary">2 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <img src="https://static.republika.co.id/uploads/images/headline_slide/prajurit-tni-membantu-mama-mama-papua-menyiapkan_220113152454-335.jpeg"
+                        class="card-img-top rounded-3" alt="Berita 8">
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Sosialisasi dalam membantu masyarakat papua</p>
+                        <small class="text-secondary">1 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===== ENAM+ (PERBAIKAN SESUAI FOTO) ===== -->
+    <section class="container my-5" id="enamPlus">
+        <div class="row g-0 align-items-stretch"> <!-- g-0 hilangkan jarak antar kolom -->
+
+            <!-- KIRI: VIDEO / GAMBAR -->
+            <div class="col-lg-8 col-md-12">
+                <div class="position-relative h-100 rounded-start-4 overflow-hidden">
+                    <img src="http://english.news.cn/20241020/f06dc0282c934401bf8dfa40ea6678b2/kFJjIJz2OuPx85ir.jpg"
+                        alt="Video ENAM+" class="w-100 h-100" style="object-fit: cover; min-height: 360px;">
+                    <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+                        style="background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);">
+                        <h6 class="fw-bold text-uppercase mb-1" style="color:#FF5C33;">ENAM+</h6>
+                        <h5 class="fw-semibold mb-3">Prabowo Terhenti Depan Keluarga Aktivis Buruh Marsinah, Teddy Lari
+                            Dipanggil</h5>
+                        <button class="btn btn-light btn-sm fw-semibold px-3 py-2 rounded-3">Tonton
+                            Selengkapnya</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KANAN: BOX HITAM ENAM+ -->
+            <div
+                class="col-lg-4 col-md-12 bg-dark text-white d-flex flex-column justify-content-center p-5 rounded-end-4">
+                <h6 class="text-uppercase text-warning fw-bold">ENAM+</h6>
+                <h5 class="fw-semibold mb-3">Prabowo Terhenti Depan Keluarga Aktivis Buruh Marsinah, Teddy Lari
+                    Dipanggil</h5>
+                <button class="btn btn-light fw-semibold px-3 py-2 rounded-3 align-self-start">Tonton
+                    Selengkapnya</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== 4 BERITA KECIL DI BAWAH ENAM+ ===== -->
+    <section class="container my-4">
+        <div class="row g-3">
+            <!-- Berita 1 -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <div class="position-relative">
+                        <img src="https://asset.kompas.com/crops/hV9mL_2aajDZkInCviVOvjoLRg8=/0x133:1600x1200/1200x800/data/photo/2025/11/05/690b00fa3a520.jpg"
+                            class="card-img-top rounded-3" alt="Berita 1" style="object-fit: cover; height: 155px;">
+                        <span
+                            class="position-absolute bottom-0 end-0 text-white bg-dark bg-opacity-75 px-2 py-1 rounded-start small">
+                            05:05
+                        </span>
+                    </div>
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Keluarga Respons Banyak Penolakan Soeharto Dapat...</p>
+                        <small class="text-secondary">News • 2 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Berita 2 -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <div class="position-relative">
+                        <img src="https://awsimages.detik.net.id/community/media/visual/2022/06/05/polisi_169.jpeg?w=700&q=90"
+                            class="card-img-top rounded-3" alt="Berita 2" style="object-fit: cover; height: 155px;">
+                        <span
+                            class="position-absolute bottom-0 end-0 text-white bg-dark bg-opacity-75 px-2 py-1 rounded-start small">
+                            05:01
+                        </span>
+                    </div>
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Heboh Terduga Penembak Hansip Diringkus Polisi di...</p>
+                        <small class="text-secondary">News • 4 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Berita 3 -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <div class="position-relative">
+                        <img src="https://i.ytimg.com/vi/HsUxDdc-iqs/maxresdefault.jpg" class="card-img-top rounded-3"
+                            alt="Berita 3" style="object-fit: cover; height: 155px;">
+                        <span
+                            class="position-absolute bottom-0 end-0 text-white bg-dark bg-opacity-75 px-2 py-1 rounded-start small">
+                            01:03
+                        </span>
+                    </div>
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1 text-danger">Peliharaan Robot AI Super Canggih Bisa Kenali Tuannya...
+                        </p>
+                        <small class="text-secondary">Tekno • 4 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Berita 4 -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <div class="position-relative">
+                        <img src="https://akualita.com/wp-content/uploads/2022/12/image-19-1024x683.png"
+                            class="card-img-top rounded-3" alt="Berita 4" style="object-fit: cover; height: 155px;">
+                        <span
+                            class="position-absolute bottom-0 end-0 text-white bg-dark bg-opacity-75 px-2 py-1 rounded-start small">
+                            01:16
+                        </span>
+                    </div>
+                    <div class="card-body px-0">
+                        <p class="fw-semibold mb-1">Sulit Diperbaiki, Mekanik Mobil Listrik Semakin...</p>
+                        <small class="text-secondary">Tekno • 5 jam lalu</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IKLAN BATIK RAYA INDONESIA (MODEL SIXtainability) ===== -->
+    <section class="container my-5">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm"
+            style="background: linear-gradient(90deg, #0d4b3d, #004e43);">
+            <div class="row g-0 align-items-center">
+                <!-- Kolom kiri: banner besar -->
+                <div class="col-lg-6 col-md-12">
+                    <img src="https://cdn1-production-images-kly.akamaized.net/EzU6xKw6b7OXPO8Od86IrBBiKAw=/496x346/smart/filters:quality(75):strip_icc()/kly-media-production/medias/5394838/original/055284000_1761642145-093560500_1761640014-Square_496x346_-_SIXtainability.png"
+                        class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Batik Raya Indonesia Banner">
+                </div>
+
+                <!-- Kolom kanan: box berita -->
+                <div class="col-lg-6 col-md-12 p-4">
+                    <div class="bg-white rounded-4 shadow-sm p-4" style="max-height: 300px; overflow-y: auto;">
+                        <h6 class="fw-bold text-danger text-uppercase mb-3 border-start border-3 border-danger ps-2">
+                            BATIK RAYA INDONESIA
+                        </h6>
+
+                        <!-- Berita 1 -->
+                        <div class="d-flex mb-3 pb-3 border-bottom">
+                            <div class="flex-grow-1 pe-3">
+                                <p class="fw-semibold mb-1">Memahami 3 Perbedaan Batik Indonesia dan Malaysia, Proses
+                                    Membatik sampai Motif</p>
+                                <small class="text-secondary">16 jam lalu</small>
+                            </div>
+                            <img src="https://www.batikprabuseno.com/artikel/wp-content/uploads/2023/12/Apa-Tujuan-Awal-Pembuatan-Batik-Ini-Dia-Penjelasannya.png"
+                                alt="Batik" class="rounded-3" style="width: 80px; height: 80px; object-fit: cover;">
+                        </div>
+
+                        <!-- Berita 2 -->
+                        <div class="d-flex">
+                            <div class="flex-grow-1 pe-3">
+                                <p class="fw-semibold mb-1">Gaya Berbatik Prilly Latuconsina, Modern dan Elegan dengan
+                                    Sentuhan Tradisional</p>
+                                <small class="text-secondary">18 jam lalu</small>
+                            </div>
+                            <img src="https://cekricek.id/wp-content/uploads/2023/04/Screenshot_20230423-173211_Instagram-699x860.jpg"
+                                alt="Fashion Batik" class="rounded-3"
+                                style="width: 80px; height: 80px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JADWAL TV ===== -->
+    <section class="container-fluid my-5 px-0">
+        <div class="container px-0">
+            <!-- Judul -->
+            <h6 class="fw-bold text-danger text-uppercase mb-3 border-start border-3 border-danger ps-2">
+                Jadwal Acara Hari Ini
+            </h6>
+
+            <!-- Row utama -->
+            <div class="row align-items-stretch gx-3" style="margin-left:-25px;">
+                <!-- Kotak gabungan SCTV & Indosiar -->
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <div class="row g-0">
+                            <!-- Jadwal SCTV -->
+                            <div class="col-md-6 border-end pe-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://4.bp.blogspot.com/-eoyEFtMw2No/W-6-CVddX_I/AAAAAAAAE_0/S1SEJSBobT4i1YTOVc1nT3X9CoVPBi83gCLcBGAs/s1600/SCTV.png"
+                                        alt="SCTV" height="26" class="me-2">
+                                    <h6 class="fw-bold mb-0">Jadwal Acara SCTV</h6>
+                                </div>
+                                <hr class="mt-0 mb-2">
+                                <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                                    <span class="badge bg-danger">LIVE</span>
+                                    <p class="mb-0">Beri Cinta Waktu</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                                    <span class="fw-bold">20:00</span>
+                                    <p class="mb-0">Cinta Sedalam Rindu</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between py-2">
+                                    <span class="fw-bold">21:30</span>
+                                    <p class="mb-0">Wanita Istimewa</p>
+                                </div>
+                                <a href="#" class="fw-semibold text-danger mt-2 d-block">Selengkapnya ></a>
+                            </div>
+
+                            <!-- Jadwal Indosiar -->
+                            <div class="col-md-6 ps-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="http://4.bp.blogspot.com/-TRlXaoHwgds/VMu-KwFuVWI/AAAAAAAAAE4/4sjFKUfD4N8/s1600/indosiar.png"
+                                        alt="Indosiar" height="26" class="me-2">
+                                    <h6 class="fw-bold mb-0">Jadwal Acara Indosiar</h6>
+                                </div>
+                                <hr class="mt-0 mb-2">
+                                <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                                    <span class="badge bg-danger">LIVE</span>
+                                    <p class="mb-0">Merangkai Kisah Indah</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                                    <span class="fw-bold">19:00</span>
+                                    <p class="mb-0">D'Academy 7 - Top 6 Show Malam Kedua</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between py-2">
+                                    <span class="fw-bold">23:30</span>
+                                    <p class="mb-0">Mega Film Asia: Dragon Blade</p>
+                                </div>
+                                <a href="#" class="fw-semibold text-danger mt-2 d-block">Selengkapnya ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advertisement -->
+                <div class="col-lg-2 d-none d-lg-block">
+                    <div class="text-center">
+                        <small class="text-secondary d-block mb-1">Advertisement</small>
+                        <img src="https://tpc.googlesyndication.com/simgad/8009215356508414518?" alt="Advertisement"
+                            class="rounded-3 shadow-sm" style="width:100%; height:200px; object-fit:cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===== NEWS | BISNIS | IKLAN ===== -->
+    <section class="container my-5">
+        <div class="row g-4">
+            <!-- Kolom 1: News -->
+            <div class="col-lg-4 col-md-6">
+                <h6 class="fw-bold text-danger text-uppercase mb-3 border-start border-3 border-danger ps-2">News</h6>
+                <div class="mb-3">
+                    <img src="https://assets-studiohub.kompas.com/video2019/73f614858444241bddf143/6e34f69d7abe0bbab8701f0e061a3943/6e34f69d7abe0bbab8701f0e061a3943.jpg"
+                        class="img-fluid rounded-3 mb-2" alt="News">
+                    <p class="fw-semibold mb-1">Kesaksian Eks Dirut Pertamina di Sidang Kery Anak Riza Chalid, Ungkap
+                        Fakta Ini Soal Terminal BBM</p>
+                    <small class="text-secondary">1 jam lalu</small>
+                </div>
+                <p class="fw-semibold mb-1">Infografis: Malapetaka Pohon Tumbang di Jakarta</p>
+                <small class="text-secondary d-block mb-2">2 jam lalu</small>
+                <p class="fw-semibold mb-1">Gempa Hari Ini Awal Pekan Senin 27 Oktober 2025, BMKG: Sakit Getarkan
+                    Indonesia</p>
+                <small class="text-secondary d-block mb-2">2 jam lalu</small>
+                <p class="fw-semibold mb-1">5 Fakta Terkait PN Jaksel Tolak Pra Peradilan Delprado Cs</p>
+                <small class="text-secondary">3 jam lalu</small>
+            </div>
+
+            <!-- Kolom 2: Bisnis -->
+            <div class="col-lg-4 col-md-6">
+                <h6 class="fw-bold text-danger text-uppercase mb-3 border-start border-3 border-danger ps-2">Bisnis</h6>
+                <div class="mb-3">
+                    <img src="https://cdn1-production-images-kly.akamaized.net/PuL2a3J6dyM_ZpbsrmZBXyFgFcw=/1280x720/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5341860/original/004946100_1757332212-Menkeu_Purbaya.jpg"
+                        class="img-fluid rounded-3 mb-2" alt="Bisnis">
+                    <p class="fw-semibold mb-1">Menkeu Purbaya Kasih Bocoran soal Kenaikan Gaji PNS di 2026</p>
+                    <small class="text-secondary">27 menit lalu</small>
+                </div>
+                <p class="fw-semibold mb-1">Harga Capai Ratusan Juta Rupiah, Inilah 5 Buah Termahal di Dunia</p>
+                <small class="text-secondary d-block mb-2">43 menit lalu</small>
+                <p class="fw-semibold mb-1">Trump dan Xi Jinping Bertemu di KTT APEC 30 Oktober 2025</p>
+                <small class="text-secondary d-block mb-2">1 jam lalu</small>
+                <p class="fw-semibold mb-1">Rp 1.764 Triliun Kredit Disebar Bank Mandiri hingga September 2025</p>
+                <small class="text-secondary d-block mb-2">1 jam lalu</small>
+                <p class="fw-semibold mb-1">Harga Pupuk Turun, Beban Petani Berkurang</p>
+                <small class="text-secondary">1 jam lalu</small>
+            </div>
+
+            <!-- Kolom 3: Advertisement -->
+            <div class="col-lg-4 col-md-12 d-flex justify-content-center">
+                <div class="card border-0 rounded-3 shadow-sm overflow-hidden" style="width: 100%; max-width: 300px;">
+                    <img src="https://tpc.googlesyndication.com/simgad/12260172802895428343" class="w-100 h-100"
+                        alt="Advertisement" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER FINAL (Versi Hitam) ===== -->
+    <footer class="mt-5 pt-5 pb-3 text-light" style="background-color:#000;">
+        <div class="container text-center text-md-start">
+
+            <!-- Baris 1: Logo utama -->
+            <div class="d-flex justify-content-center justify-content-md-start align-items-center mb-4 flex-wrap gap-4">
+                <img src="https://cdn0-production-assets-kly.akamaized.net/mobile_logos/188/original/075074400_1759809369-Logo_liputan6.webp"
+                    alt="Liputan6" height="36">
+                <img src="https://preview-kly.akamaized.net/liputan6/trustworthy.webp" alt="Dewan Pers" height="40">
+                <img src="https://preview-kly.akamaized.net/liputan6/ifcn-logo.png" alt="Cek Fakta" height="36">
+            </div>
+
+            <!-- Baris 2: Tautan navigasi -->
+            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3 small mb-3">
+                <a href="#" class="text-decoration-none text-light-50">Kontak</a>
+                <a href="#" class="text-decoration-none text-light-50">Redaksi</a>
+                <a href="#" class="text-decoration-none text-light-50">Disclaimer</a>
+                <a href="#" class="text-decoration-none text-light-50">Kode Etik</a>
+                <a href="#" class="text-decoration-none text-light-50">Pedoman Media Siber</a>
+                <a href="#" class="text-decoration-none text-light-50">Sitemap</a>
+                <a href="#" class="text-decoration-none text-light-50">Form Pengaduan</a>
+                <a href="#" class="text-decoration-none text-light-50">Tentang Kami</a>
+                <a href="#" class="text-decoration-none text-light-50">Karir</a>
+                <a href="#" class="text-decoration-none text-light-50">Metode Cek Fakta</a>
+            </div>
+
+            <hr class="my-3 border-secondary">
+
+            <!-- Baris 3: Partner + Social -->
+            <div class="row align-items-center">
+                <!-- Partner logos -->
+                <div class="col-md-9 text-center text-md-start mb-4 mb-md-0">
+                    <div
+                        class="d-flex flex-wrap justify-content-center justify-content-md-start align-items-center gap-3 mb-3">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/d7/60/c6/d760c6ae-3d7e-8e5b-86eb-72339a4fde7c/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png"
+                            alt="Liputan6" height="22">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.YW6vR3pcOdGNyP57JtxGngAAAA?pid=Api&P=0&h=180"
+                            alt="Merdeka" height="22">
+                        <img src="https://static.vecteezy.com/system/resources/previews/026/614/282/large_2x/football-logo-on-letter-b-with-moving-football-icon-soccer-logo-template-free-vector.jpg"
+                            alt="Bola.com" height="22">
+                        <img src="https://img.freepik.com/vector-premium/logotipo-voleibol-letra-b-icono-pelota-voleibol-movimiento-simbolo-pelota-voleibol_754537-5064.jpg"
+                            alt="Bola.net" height="22">
+                        <img src="https://cdn1-production-assets-kly.akamaized.net/logos/841/original/040270100_1744205364-Fimela.png"
+                            alt="Fimela" height="22">
+                        <img src="https://images.seeklogo.com/logo-png/44/1/kapanlagi-logo-png_seeklogo-448815.png"
+                            alt="KapanLagi" height="22">
+                        <img src="https://cdn-brilio-net.akamaized.net/production-assets/brilio/img/Logo-Brilio-Signature.png"
+                            alt="Brilio" height="22">
+                    </div>
+                    <small class="text-secondary">
+                        Copyright © 2025 <strong class="text-light">Liputan6.com</strong> | KLY KapanLagi Youniverse.
+                        All Rights Reserved.
+                    </small>
+                </div>
+
+                <!-- Social icons -->
+                <div class="col-md-3 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                                width="24" alt="YouTube"></a>
+                        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
+                                width="24" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img
+                                src="https://toppng.com/public/uploads/preview/twitter-x-new-logo-round-icon-png-11692480241tdbz6jparr.webp"
+                                width="24" alt="Twitter"></a>
+                        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                                width="24" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png"
+                                width="24" alt="WhatsApp"></a>
+                        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"
+                                width="24" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
